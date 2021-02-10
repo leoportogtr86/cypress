@@ -17,7 +17,7 @@ describe('Grupo de testes', () => {
 
     describe('Grupo interno', () => {
 
-        it('Teste 1 - Grupo interno', () => {
+        it.skip('Teste 1 - Grupo interno', () => {
 
             console.log('Teste 1 de grupo interno')
 
@@ -41,7 +41,7 @@ describe('Grupo de testes', () => {
 
     })
 
-    it('Teste interno 1', () => {
+    it.skip('Teste interno 1', () => {
         console.log('Teste interno 1')
 
     })

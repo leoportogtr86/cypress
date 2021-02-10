@@ -51,7 +51,7 @@ describe('Grupo de testes', () => {
 
     })
 
-    it('Teste interno 3', () => {
+    it.only('Teste interno 3', () => {
         console.log('Teste interno 3')
 
     })

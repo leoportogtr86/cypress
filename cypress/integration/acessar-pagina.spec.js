@@ -7,9 +7,13 @@ describe('Iniciando acesso de páginas', () => {
     it('Primeiro acesso', () => {
 
         cy.visit('http://wcaquino.me/cypress/componentes.html')
-        cy.title().should('equal', 'Campo de Treinamento')
+        cy.title()
 
-        cy.title().should('contains', 'Campo')
+            .should('equal', 'Campo de Treinamento')
+            .and('contains', 'Campo')
+
+
+
 
     })
 })

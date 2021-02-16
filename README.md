@@ -232,7 +232,18 @@ Verificando os tipos
         })
 
 
+##### Buscando e interagindo com elementos
 
+
+
+**Click num botão**
+
+
+    it('Interagindo', () => {
+
+        cy.visit('http://wcaquino.me/cypress/componentes.html')
+        cy.get('#buttonSimple').click()
+    })
 
 
 

@@ -61,3 +61,19 @@ Podemos usar o comando **skip** para pular determinado teste e fazer o fluxo pas
 
         console.log('este teste não será executado')
     })
+
+
+
+#### Comando **only**
+
+Quando queremos que apenas determinado teste seja executado, usamos o **only**.
+
+
+    it.only('teste only', ()=>{
+
+        console.log('apenas este teste será executado.')
+    })
+
+
+
+Caso existam várias ocorrẽncias, apenas o último será executado.    

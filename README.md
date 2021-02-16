@@ -29,6 +29,8 @@ Meus estudos de testes automatizados com a ferramenta Cypress
 
 #### Criando um grupo de testes (describe)
 
+Podemos criar um grupo (describe) com vários testes dentro
+
 
     describe('Grupo', ()=>{
 

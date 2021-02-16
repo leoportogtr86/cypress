@@ -66,5 +66,7 @@ it('arrays', () => {
 
     expect(letras).to.have.members(['a', 'b', 'c'])
 
+    expect(letras).to.include.members(['a', 'b'])
+
 
 })

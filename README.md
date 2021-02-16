@@ -174,7 +174,7 @@ Verificando se o objeto está ou não vazio
 ##### Assertivas de arrays
 
 
-Verificando se há determinandos elementos em certo array
+Verificando se há determinandos elementos em certo array (verificação integral, se todos os elementos estão lá)
 
 
     it('arrays', () => {
@@ -187,3 +187,8 @@ Verificando se há determinandos elementos em certo array
 
     })
 
+
+Verificando se apenas alguns elementos estão no array
+
+
+    expect(letras).to.include.members(['a', 'b'])

@@ -128,8 +128,7 @@ Neste caso iremos fazer um teste de true ou false para saber se a assertiva foi 
 Podemos testar se dois objetos são iguais da seguinte forma:
 
 
-
-
+```
     it('objetos', () => {
 
         const pessoa1 = {
@@ -149,14 +148,14 @@ Podemos testar se dois objetos são iguais da seguinte forma:
 
         expect(pessoa2).eql({ nome: "Jack", idade: 15 })
     })
-
+```
 
 
 Verificando se existe uma propriedade específica no objeto
 
 
     
-    expect(pessoa3).include({ profissão: "vaqueiro" })
+`expect(pessoa3).include({ profissão: "vaqueiro" })`
 
 
     

@@ -219,4 +219,25 @@ Verificando os tipos
         expect(nome).equal("Leonardo")
         expect(fruta).not.be.equal("jaca")
 
-    })
+    }) 
+
+
+#### Acessando páginas
+
+
+    it('Primeiro acesso', () => {
+
+            cy.visit('http://wcaquino.me/cypress/componentes.html')
+
+        })
+
+
+
+
+
+
+
+
+
+
+

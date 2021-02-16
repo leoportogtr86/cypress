@@ -106,3 +106,20 @@ Assertiva retornará sucesso.
     })
 
 Assertiva retornará erro.
+
+
+##### Assertiva booleana
+
+Neste caso iremos fazer um teste de true ou false para saber se a assertiva foi ou não atendida
+
+
+    it('booleanos', () => {
+
+        const isDomingo = true
+
+        expect(isDomingo).equal(true)
+    })
+
+
+    
+

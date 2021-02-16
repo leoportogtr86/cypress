@@ -76,4 +76,33 @@ Quando queremos que apenas determinado teste seja executado, usamos o **only**.
 
 
 
-Caso existam várias ocorrẽncias, apenas o último será executado.    
+Caso existam várias ocorrẽncias, apenas o último será executado.
+
+
+### Assertivas
+
+Para fazer uma verificação, para determinada condição ser atendida, usamos as **assertivas**.
+
+
+##### Igualdade
+
+    it ('teste de igualdade', ()=>{
+
+        const a = 10
+
+        expect(a).equal(10)
+        
+    })
+
+Assertiva retornará sucesso.    
+
+
+    it ('teste de igualdade', ()=>{
+
+        const a = 10
+
+        expect(a).equal(15)
+        
+    })
+
+Assertiva retornará erro.

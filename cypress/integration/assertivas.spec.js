@@ -1,6 +1,7 @@
 /// <references types="cypress"/>
 
 
+
 it('igualdade', () => {
 
     const a = 10
@@ -57,3 +58,13 @@ it('objetos', () => {
     expect(pessoa1).to.be.empty
 })
 
+
+it('arrays', () => {
+
+
+    let letras = ['a', 'b', 'c']
+
+    expect(letras).to.have.members(['a', 'b', 'c'])
+
+
+})

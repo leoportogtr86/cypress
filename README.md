@@ -168,3 +168,22 @@ Verificando se o objeto está ou não vazio
 
     expect(pessoa2).to.not.be.empty
     expect(pessoa1).to.be.empty
+
+
+
+##### Assertivas de arrays
+
+
+Verificando se há determinandos elementos em certo array
+
+
+    it('arrays', () => {
+
+
+        let letras = ['a', 'b', 'c']
+
+        expect(letras).to.have.members(['a', 'b', 'c'])
+
+
+    })
+

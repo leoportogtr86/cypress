@@ -1,9 +1,6 @@
 /// <references types="cypress"/>
 
 
-
-
-
 it('igualdade', () => {
 
     const a = 10
@@ -56,5 +53,7 @@ it('objetos', () => {
     expect(pessoa3).include({ profissão: "vaqueiro" })
 
     expect(pessoa1).property('nome')
+    expect(pessoa2).to.not.be.empty
+    expect(pessoa1).to.be.empty
 })
 

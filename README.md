@@ -164,3 +164,7 @@ Verificando se há certa propriedade no objeto
 `expect(pessoa1).property('nome')`
 
 
+Verificando se o objeto está ou não vazio
+
+`expect(pessoa2).to.not.be.empty`
+`expect(pessoa1).to.be.empty`

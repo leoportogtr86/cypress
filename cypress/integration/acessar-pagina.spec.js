@@ -9,6 +9,8 @@ describe('Iniciando acesso de páginas', () => {
         cy.visit('http://wcaquino.me/cypress/componentes.html')
         cy.title().should('equal', 'Campo de Treinamento')
 
+        cy.title().should('contains', 'Campo')
+
     })
 })
 

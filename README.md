@@ -7,3 +7,12 @@ Meus estudos de testes automatizados com a ferramenta Cypress
 ### Rodando o projeto
 
      npm run cypress:open
+
+
+#### Criando um simples teste
+
+
+    it('Teste', ()=>{
+
+        console.log('Teste 1 no console.')
+    })

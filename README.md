@@ -6,4 +6,4 @@ Meus estudos de testes automatizados com a ferramenta Cypress
 
 ### Rodando o projeto
 
-     npm cypress:open
+     npm run cypress:open

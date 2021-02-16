@@ -2,3 +2,8 @@
 
 # cypress
 Meus estudos de testes automatizados com a ferramenta Cypress
+
+
+### Rodando o projeto
+
+     "cypress:open": "npx cypress open"

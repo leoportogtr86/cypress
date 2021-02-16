@@ -151,12 +151,16 @@ Podemos testar se dois objetos são iguais da seguinte forma:
 ```
 
 
-Verificando se existe uma propriedade específica no objeto
+Verificando se existe uma propriedade específica no objeto com determinado valor
 
 
     
 `expect(pessoa3).include({ profissão: "vaqueiro" })`
 
 
-    
+Verificando se há certa propriedade no objeto
+
+
+`expect(pessoa1).property('nome')`
+
 

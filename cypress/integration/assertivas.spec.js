@@ -3,6 +3,7 @@
 
 
 
+
 it('igualdade', () => {
 
     const a = 10
@@ -53,5 +54,7 @@ it('objetos', () => {
     expect(pessoa2).eql({ nome: "Jack", idade: 15 })
 
     expect(pessoa3).include({ profissão: "vaqueiro" })
+
+    expect(pessoa1).property('nome')
 })
 

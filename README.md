@@ -199,3 +199,24 @@ Verificando se o array está vazio
 
     expect(array).empty
     expect(array).not.empty
+
+
+##### Assertivas de tipos
+
+
+Verificando os tipos
+
+
+    it('igualdade', () => {
+
+        const a = 10
+        const nome = 'Leonardo'
+        const fruta = "uva"
+
+
+        expect(a).equal(10)
+        expect(a).not.equal(90)
+        expect(nome).equal("Leonardo")
+        expect(fruta).not.be.equal("jaca")
+
+    })

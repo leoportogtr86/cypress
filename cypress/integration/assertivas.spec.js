@@ -2,7 +2,6 @@
 
 
 
-
 it('igualdade', () => {
 
     const a = 10
@@ -74,4 +73,15 @@ it('arrays', () => {
     expect(array).not.empty
 
 
+})
+
+
+it('tipos', () => {
+
+    const nome = "Leo"
+    let idade = 34
+
+    expect(nome).a('string')
+    expect(idade).an('number')
+    expect({ nome: 'cão' }).an('object')
 })

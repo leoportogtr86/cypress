@@ -49,3 +49,15 @@ Podemos criar um grupo (describe) com vários testes dentro
             console.log('Teste interno 1')
         })
     })
+
+
+#### Pulando um teste (skip)
+
+
+Podemos usar o comando **skip** para pular determinado teste e fazer o fluxo passar direto.
+
+
+    it.skip('Teste skip', ()=>{
+
+        console.log('este teste não será executado')
+    })

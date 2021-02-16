@@ -1,6 +1,7 @@
 /// <references types="cypress"/>
 
 
+
 it('igualdade', () => {
 
     const a = 10
@@ -21,5 +22,26 @@ it('booleanos', () => {
     const isDomingo = true
 
     expect(isDomingo).equal(true)
+})
+
+
+it('objetos', () => {
+
+    const pessoa1 = {
+
+        nome: "Doug",
+        idade: 12
+    }
+
+    const pessoa2 = {
+
+
+        nome: "Jack",
+        idade: 15
+
+
+    }
+
+    expect(pessoa2).eql({ nome: "Jack", idade: 15 })
 })
 

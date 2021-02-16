@@ -121,5 +121,35 @@ Neste caso iremos fazer um teste de true ou false para saber se a assertiva foi 
     })
 
 
+
+##### Assertivas de objetos
+
+
+Podemos testar se dois objetos são iguais da seguinte forma:
+
+
+
+
+    it('objetos', () => {
+
+        const pessoa1 = {
+
+            nome: "Doug",
+            idade: 12
+        }
+
+        const pessoa2 = {
+
+
+            nome: "Jack",
+            idade: 15
+
+
+        }
+
+        expect(pessoa2).eql({ nome: "Jack", idade: 15 })
+    })
+
+
     
 

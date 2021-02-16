@@ -192,3 +192,10 @@ Verificando se apenas alguns elementos estão no array
 
 
     expect(letras).to.include.members(['a', 'b'])
+
+
+Verificando se o array está vazio
+
+
+    expect(array).empty
+    expect(array).not.empty

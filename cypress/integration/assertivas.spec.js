@@ -2,6 +2,7 @@
 
 
 
+
 it('igualdade', () => {
 
     const a = 10
@@ -64,9 +65,13 @@ it('arrays', () => {
 
     let letras = ['a', 'b', 'c']
 
+    let array = []
+
     expect(letras).to.have.members(['a', 'b', 'c'])
 
     expect(letras).to.include.members(['a', 'b'])
+    expect(array).empty
+    expect(array).not.empty
 
 
 })

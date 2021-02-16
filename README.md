@@ -90,7 +90,7 @@ Para fazer uma verificação, para determinada condição ser atendida, usamos a
 
         const a = 10
 
-        expect(a).equal(10)
+        expect(a, 'assertiva atendida').equal(10)
         
     })
 
@@ -101,7 +101,7 @@ Assertiva retornará sucesso.
 
         const a = 10
 
-        expect(a).equal(15)
+        expect(a, 'erro').equal(15)
         
     })
 

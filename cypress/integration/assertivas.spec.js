@@ -4,8 +4,8 @@ it('igualdade', () => {
 
     const a = 10
 
-    expect(a).equal(10)
-    expect(a).equal(5)
+    expect(a, 'assertiva atendida').equal(10)
+    expect(a, 'erro....').equal(5)
 
 
 })

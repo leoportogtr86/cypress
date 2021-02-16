@@ -151,5 +151,13 @@ Podemos testar se dois objetos são iguais da seguinte forma:
     })
 
 
+
+Verificando se existe uma propriedade específica no objeto
+
+
+    
+    expect(pessoa3).include({ profissão: "vaqueiro" })
+
+
     
 

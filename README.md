@@ -19,7 +19,31 @@ Meus estudos de testes automatizados com a ferramenta Cypress
 #### Criando um simples teste
 
 
+
+
     it('Teste', ()=>{
 
         console.log('Teste 1 no console.')
+    })
+
+
+#### Criando um grupo de testes (describe)
+
+
+    describe('Grupo', ()=>{
+
+        it('Teste 1', ()=>{
+
+            console.log('Teste interno 1')
+        })
+
+        it('Teste 2', ()=>{
+
+            console.log('Teste interno 1')
+        })
+
+        it('Teste 3', ()=>{
+
+            console.log('Teste interno 1')
+        })
     })

@@ -1,4 +1,7 @@
-/// <references types="cypress"/>
+// /// <references types="cypress"/>
+
+// const { it } = require("mocha")
+
 
 
 
@@ -62,4 +65,34 @@ describe('Grupo de testes', () => {
 it('Teste treino', () => {
 
     console.log('apenas mais um teste')
+})
+
+//---------------------------------------------
+
+let a = 10
+let b = 50
+
+
+describe('Operações', () => {
+
+    it('soma', () => {
+
+        console.log(`Soma => ${a + b}`)
+
+    })
+
+    it('subtração', () => {
+
+        console.log(`Subtração => ${a - b}`)
+    })
+
+    it('divisão', () => {
+
+        console.log(`Divisão => ${a / b}`)
+    })
+
+    it('multiplicação', () => {
+
+        console.log(`Multiplicação => ${a * b}`)
+    })
 })

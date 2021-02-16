@@ -9,6 +9,13 @@ Meus estudos de testes automatizados com a ferramenta Cypress
      npm run cypress:open
 
 
+
+
+#### Script de configuração no VS Code
+
+    /// <references types="cypress"/>
+
+
 #### Criando um simples teste
 
 

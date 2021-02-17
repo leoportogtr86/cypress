@@ -502,6 +502,62 @@ Ex:
 
 
 
+### Usando hooks (before) no cypress
+
+
+Se quisermos que uma função seja chamada em cada um dos testes, podemos usar o **before()** para evitar repetições desnecessárias.
+
+
+
+<details>
+
+<summary>Script</summary>
+
+
+
+    describe('Usando o hook before', () => {
+
+        //esta função será chamada em todos os testes internos desse describe
+
+        before(() => {
+
+            cy.visit('http://wcaquino.me/cypress/componentes.html')
+        })
+
+        beforeEach(() => {
+
+            cy.reload()
+        })
+
+
+
+        it('testando hook 1', () => {
+
+            cy.get('#buttonSimple').click()
+
+
+        })
+
+        it('testando hook 2', () => {
+
+            cy.get('#buttonLazy').click()
+
+
+        })
+
+
+
+
+
+    })
+
+O before() fará a função ser chamada antes de todos os testes existentes nesse describe.
+
+Já o beforeEach() irá chamar antes de cada teste.
+
+
+</details>
+
 
 
 

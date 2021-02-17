@@ -4,7 +4,7 @@
 Meus estudos de testes automatizados com a ferramenta Cypress
 
 
-### Rodando o projeto
+## Rodando o projeto
 
 
 <details>
@@ -20,7 +20,7 @@ Meus estudos de testes automatizados com a ferramenta Cypress
 
 
 
-#### Script de configuração no VS Code
+## Script de configuração no VS Code
 
 
 <details>
@@ -35,7 +35,7 @@ Meus estudos de testes automatizados com a ferramenta Cypress
 
 
 
-#### Criando um simples teste
+## Criando um simples teste
 
 <details>
 
@@ -55,7 +55,7 @@ Meus estudos de testes automatizados com a ferramenta Cypress
 
 
 
-#### Criando um grupo de testes (describe)
+## Criando um grupo de testes (describe)
 
 
 <details>
@@ -87,7 +87,7 @@ Meus estudos de testes automatizados com a ferramenta Cypress
 
 
 
-#### Pulando um teste (skip)
+## Pulando um teste (skip)
 
 Podemos usar o comando **skip** para pular determinado teste e fazer o fluxo passar direto.
 
@@ -109,7 +109,7 @@ Podemos usar o comando **skip** para pular determinado teste e fazer o fluxo pas
 
 
 
-#### Comando **only**
+## Comando **only**
 
 
 Quando queremos que apenas determinado teste seja executado, usamos o **only**.
@@ -136,12 +136,12 @@ Caso existam várias ocorrẽncias, apenas o último será executado.
 
 
 
-### Assertivas
+## Assertivas
 
 Para fazer uma verificação, para determinada condição ser atendida, usamos as **assertivas**.
 
 
-##### Igualdade
+## Igualdade
 
 
 <details>
@@ -188,7 +188,7 @@ Assertiva retornará sucesso.
 Assertiva retornará erro.
 
 
-##### Assertiva booleana
+## Assertiva booleana
 
 Neste caso iremos fazer um teste de true ou false para saber se a assertiva foi ou não atendida
 
@@ -214,7 +214,7 @@ Neste caso iremos fazer um teste de true ou false para saber se a assertiva foi 
 
 
 
-##### Assertivas de objetos
+## Assertivas de objetos
 
 
 Podemos testar se dois objetos são iguais da seguinte forma:
@@ -297,7 +297,7 @@ Verificando se o objeto está ou não vazio
 
 
 
-##### Assertivas de arrays
+## Assertivas de arrays
 
 Verificando se há determinandos elementos em certo array (verificação integral, se todos os elementos estão lá)
 
@@ -356,7 +356,7 @@ Verificando se o array está vazio
 
 
 
-##### Assertivas de tipos
+## Assertivas de tipos
 
 
 Verificando os tipos
@@ -387,7 +387,7 @@ Verificando os tipos
 
 
 
-#### Acessando páginas
+## Acessando páginas
 
 
 <details>
@@ -408,7 +408,7 @@ Verificando os tipos
 
 
 
-##### Buscando e interagindo com elementos
+## Buscando e interagindo com elementos
 
 **Click num botão**
 
@@ -428,7 +428,7 @@ Verificando os tipos
 </details>
 
 
-##### Comandos Pause e Debug
+## Comandos Pause e Debug
 
 Podemos "pegar" mais detalhes sobre a execução dos testes ao usar os comandos pause e debog.
 
@@ -454,6 +454,40 @@ Podemos "pegar" mais detalhes sobre a execução dos testes ao usar os comandos 
 
 
 </details>
+
+
+## Selecionando elementos de uma página
+
+
+Para selecionar determinado elemento HTML de uma página com **cypress**, usamos os seletores css padrões.
+
+Ex:
+
+    h1
+    .title
+    #titulo
+    ...
+
+
+### Interagindo com textos
+
+
+
+<details>
+
+<summary>Script</summary>
+
+
+        cy.get('.facilAchar').should('contain', 'Cuidado')
+
+        cy.get('.facilAchar').should('text', 'Cuidado onde clica, muitas armadilhas...')
+
+
+
+</details>
+
+
+
 
 
 

@@ -488,6 +488,18 @@ Ex:
 
 
 
+### Interagindo com links e botões (click)
+
+
+
+<details>
+
+<summary>Script</summary>
+
+    cy.get('[href="#"]').click()
+
+</details>
+
 
 
 

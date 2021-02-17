@@ -2,6 +2,7 @@
 
 
 
+
 describe('Elementos Html', () => {
 
 
@@ -14,6 +15,13 @@ describe('Elementos Html', () => {
 
 
 
+    })
+
+
+    it('links', () => {
+
+        cy.get('[href="#"]').click()
+        cy.get('#resultado').should('text', 'Voltou!')
     })
 
 

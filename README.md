@@ -428,6 +428,33 @@ Verificando os tipos
 </details>
 
 
+##### Comandos Pause e Debug
+
+Podemos "pegar" mais detalhes sobre a execução dos testes ao usar os comandos pause e debog.
+
+<details>
+
+<summary>Pause</summary>
+
+        cy.pause()
+    
+
+
+
+</details>
+
+
+<details>
+
+<summary>Debug</summary>
+
+        cy.title().should('contain', 'Treinamento').debug()
+    
+
+
+
+</details>
+
 
 
 

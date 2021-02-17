@@ -250,8 +250,8 @@ Podemos testar se dois objetos são iguais da seguinte forma:
 
 
 
-<details>
 Verificando se existe uma propriedade específica no objeto com determinado valor
+<details>
 
 <summary>Script</summary>
 
@@ -262,8 +262,8 @@ Verificando se existe uma propriedade específica no objeto com determinado valo
 
 
 
-<details>
 Verificando se há certa propriedade no objeto
+<details>
 
 
 
@@ -320,8 +320,8 @@ Verificando se há determinandos elementos em certo array (verificação integra
 
 
 </details>
-
 Verificando se apenas alguns elementos estão no array
+
 
 <details>
 

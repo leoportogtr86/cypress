@@ -6,19 +6,40 @@ Meus estudos de testes automatizados com a ferramenta Cypress
 
 ### Rodando o projeto
 
+
+<details>
+
+<summary>Script</summary>
+
      npm run cypress:open
+
+
+</details>
+
 
 
 
 
 #### Script de configuração no VS Code
 
+
+<details>
+
+<summary>Comentário</summary>
+
     /// <references types="cypress"/>
+
+
+</details>
+
+
 
 
 #### Criando um simples teste
 
+<details>
 
+<summary>Script</summary>
 
 
     it('Teste', ()=>{
@@ -26,10 +47,21 @@ Meus estudos de testes automatizados com a ferramenta Cypress
         console.log('Teste 1 no console.')
     })
 
+</details>
+
+
+
+
+
+
 
 #### Criando um grupo de testes (describe)
 
-Podemos criar um grupo (describe) com vários testes dentro
+
+<details>
+
+<summary>Podemos criar um grupo (describe) com vários testes dentro</summary>
+
 
 
     describe('Grupo', ()=>{
@@ -51,32 +83,57 @@ Podemos criar um grupo (describe) com vários testes dentro
     })
 
 
-#### Pulando um teste (skip)
+</details>
 
+
+
+#### Pulando um teste (skip)
 
 Podemos usar o comando **skip** para pular determinado teste e fazer o fluxo passar direto.
 
 
+<details>
+
+<summary>Script</summary>
+
+     
     it.skip('Teste skip', ()=>{
 
         console.log('este teste não será executado')
     })
 
 
+</details>
+
+
+
+
 
 #### Comando **only**
 
+
 Quando queremos que apenas determinado teste seja executado, usamos o **only**.
+
+<details>
+
+<summary>Script</summary>
 
 
     it.only('teste only', ()=>{
 
         console.log('apenas este teste será executado.')
     })
+     
+
+
+</details>
 
 
 
 Caso existam várias ocorrẽncias, apenas o último será executado.
+
+
+
 
 
 ### Assertivas
@@ -86,6 +143,12 @@ Para fazer uma verificação, para determinada condição ser atendida, usamos a
 
 ##### Igualdade
 
+
+<details>
+
+<summary>Script</summary>
+
+     
     it ('teste de igualdade', ()=>{
 
         const a = 10
@@ -94,7 +157,18 @@ Para fazer uma verificação, para determinada condição ser atendida, usamos a
         
     })
 
+
+</details>
+
+
+
 Assertiva retornará sucesso.    
+
+
+
+<details>
+
+<summary>Script</summary>
 
 
     it ('teste de igualdade', ()=>{
@@ -104,6 +178,12 @@ Assertiva retornará sucesso.
         expect(a, 'erro').equal(15)
         
     })
+    
+
+
+</details>
+
+
 
 Assertiva retornará erro.
 
@@ -113,12 +193,24 @@ Assertiva retornará erro.
 Neste caso iremos fazer um teste de true ou false para saber se a assertiva foi ou não atendida
 
 
+<details>
+
+<summary>Script</summary>
+
+
     it('booleanos', () => {
 
         const isDomingo = true
 
         expect(isDomingo).equal(true)
     })
+     
+
+
+</details>
+
+
+
 
 
 
@@ -127,6 +219,11 @@ Neste caso iremos fazer um teste de true ou false para saber se a assertiva foi 
 
 Podemos testar se dois objetos são iguais da seguinte forma:
 
+<details>
+
+<summary>Script</summary>
+
+     
 
 
     it('objetos', () => {
@@ -149,33 +246,67 @@ Podemos testar se dois objetos são iguais da seguinte forma:
         expect(pessoa2).eql({ nome: "Jack", idade: 15 })
     })
 
+</details>
 
 
+
+<details>
 Verificando se existe uma propriedade específica no objeto com determinado valor
 
+<summary>Script</summary>
 
-    
     expect(pessoa3).include({ profissão: "vaqueiro" })
+     
+
+</details>
 
 
+
+<details>
 Verificando se há certa propriedade no objeto
 
 
+
+<summary>Script</summary>
+
+     
     expect(pessoa1).property('nome')
+
+
+</details>
+  
+
 
 
 Verificando se o objeto está ou não vazio
 
+<details>
+
+<summary>Script</summary>
+
+
     expect(pessoa2).to.not.be.empty
     expect(pessoa1).to.be.empty
+     
+
+
+</details>
+
+
+
 
 
 
 ##### Assertivas de arrays
 
-
 Verificando se há determinandos elementos em certo array (verificação integral, se todos os elementos estão lá)
 
+
+<details>
+
+<summary>Script</summary>
+
+     
 
     it('arrays', () => {
 
@@ -188,23 +319,53 @@ Verificando se há determinandos elementos em certo array (verificação integra
     })
 
 
+</details>
+
 Verificando se apenas alguns elementos estão no array
 
+<details>
 
+<summary>Script</summary>
+
+     
     expect(letras).to.include.members(['a', 'b'])
+
+
+</details>
+
 
 
 Verificando se o array está vazio
 
 
+<details>
+
+<summary>Script</summary>
+
+
     expect(array).empty
     expect(array).not.empty
+     
+
+
+</details>
+
+
+
+
+
 
 
 ##### Assertivas de tipos
 
 
 Verificando os tipos
+
+<details>
+
+<summary>Script</summary>
+
+     
 
 
     it('igualdade', () => {
@@ -221,8 +382,17 @@ Verificando os tipos
 
     }) 
 
+</details>
+
+
+
 
 #### Acessando páginas
+
+
+<details>
+
+<summary>Script</summary>
 
 
     it('Primeiro acesso', () => {
@@ -230,13 +400,21 @@ Verificando os tipos
             cy.visit('http://wcaquino.me/cypress/componentes.html')
 
         })
+     
+
+
+</details>
+
+
 
 
 ##### Buscando e interagindo com elementos
 
-
-
 **Click num botão**
+
+<details>
+
+<summary>Script</summary>
 
 
     it('Interagindo', () => {
@@ -244,6 +422,15 @@ Verificando os tipos
         cy.visit('http://wcaquino.me/cypress/componentes.html')
         cy.get('#buttonSimple').click()
     })
+     
+
+
+</details>
+
+
+
+
+
 
 
 
